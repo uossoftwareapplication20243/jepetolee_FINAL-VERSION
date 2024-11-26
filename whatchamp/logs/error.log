@@ -1,0 +1,1151 @@
+2024-10-26 06:26:21 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 136, in <module>
+
+2024-10-26 06:26:21 [ERROR]: Python error:     main()
+
+2024-10-26 06:26:21 [ERROR]: Python error:   File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 124, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-10-26 06:26:21 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-10-26 06:44:36 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 136, in <module>
+
+2024-10-26 06:44:36 [ERROR]: Python error:     main()
+
+2024-10-26 06:44:36 [ERROR]: Python error:   File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 124, in main
+    "champ1_num": int(top_indices_original[0]),
+
+2024-10-26 06:44:36 [ERROR]: Python error:                       ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-10-26 06:44:36 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-10-26 06:45:02 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 136, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 101, in main
+
+2024-10-26 06:45:02 [ERROR]: Python error:     filtered_df = standardized_data[standardized_data['\ub77c\uc778'] == json_data['q0']].copy()
+
+2024-10-26 06:45:02 [ERROR]: Python error:                                                                  ~~~~~~~~~^^^^^^
+KeyError: 'q0'
+
+2024-10-26 06:45:02 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-10-26 06:46:03 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 136, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 124, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-10-26 06:46:04 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-10-26 07:55:08 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 136, in <module>
+
+2024-10-26 07:55:08 [ERROR]: Python error:     main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 124, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-10-26 07:55:08 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-10-26 07:55:57 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 136, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 124, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-10-26 07:55:57 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-10-26 08:20:07 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 136, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 124, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-10-26 08:20:07 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-10-26 08:36:58 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 136, in <module>
+
+2024-10-26 08:36:58 [ERROR]: Python error:     main()
+
+2024-10-26 08:36:58 [ERROR]: Python error:   File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 124, in main
+
+2024-10-26 08:36:58 [ERROR]: Python error:     "champ1_num": int(top_indices_original[0]),
+
+2024-10-26 08:36:58 [ERROR]: Python error:                       ~~~~~~~~~~~~~~~~~~~~^^^
+
+2024-10-26 08:36:58 [ERROR]: Python error: IndexError: list index out of range
+
+2024-10-26 08:36:58 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-10-26 08:37:59 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 136, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 124, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-10-26 08:37:59 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-10-26 08:46:13 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 136, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 124, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-10-26 08:46:13 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-10-26 09:50:08 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 136, in <module>
+
+2024-10-26 09:50:08 [ERROR]: Python error:     main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 124, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-10-26 09:50:08 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 03:48:55 [ERROR]: Python error: Traceback (most recent call last):
+
+2024-11-07 03:48:55 [ERROR]: Python error:   File "C:\Developer\nodejs\whatchamp\python\riot_name_api.py", line 2, in <module>
+
+2024-11-07 03:48:55 [ERROR]: Python error:     import requests
+
+2024-11-07 03:48:55 [ERROR]: Python error: ModuleNotFoundError: No module named 'requests'
+
+2024-11-07 03:48:55 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 03:50:09 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\riot_name_api.py", line 135, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\riot_name_api.py", line 83, in main
+    summoner_name = json_data[0]
+
+2024-11-07 03:50:09 [ERROR]: Python error:                     ~~~~~~~~~^^^
+KeyError: 0
+
+2024-11-07 03:50:09 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 03:51:29 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\riot_name_api.py", line 135, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\riot_name_api.py", line 83, in main
+
+2024-11-07 03:51:29 [ERROR]: Python error:     summoner_name = json_data[0]
+                    ~~~~~~~~~^^^
+KeyError: 0
+
+2024-11-07 03:51:29 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 03:53:22 [ERROR]: Error parsing Python response: Unexpected token 'E', "Error: 403
+" is not valid JSON
+2024-11-07 03:57:33 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\riot_name_api.py", line 136, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\riot_name_api.py", line 88, in main
+    summoner_info = get_summoner_info(summoner_name, tag)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\nodejs\whatchamp\python\riot_name_api.py", line 37, in get_summoner_info
+    console.log(url);
+    ^^^^^^^
+
+2024-11-07 03:57:33 [ERROR]: Python error: NameError: name 'console' is not defined
+
+2024-11-07 03:57:33 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 03:58:09 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\riot_name_api.py", line 136, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\riot_name_api.py", line 88, in main
+    summoner_info = get_summoner_info(summoner_name, tag)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\nodejs\whatchamp\python\riot_name_api.py", line 37, in get_summoner_info
+    print(url);
+    ^^^^^^^^^^
+  File "C:\Developer\python\Lib\encodings\cp1252.py", line 19, in encode
+
+2024-11-07 03:58:09 [ERROR]: Python error:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 67-69: character maps to <undefined>
+
+2024-11-07 03:58:09 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 03:59:46 [ERROR]: Error parsing Python response: Expected property name or '}' in JSON at position 1
+2024-11-07 04:00:01 [ERROR]: Error parsing Python response: Expected property name or '}' in JSON at position 1
+2024-11-07 04:01:39 [ERROR]: Error parsing Python response: Cannot set headers after they are sent to the client
+2024-11-07 04:20:16 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 136, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 101, in main
+    filtered_df = standardized_data[standardized_data['\ub77c\uc778'] == json_data['q0']].copy()
+
+2024-11-07 04:20:16 [ERROR]: Python error:                                                                  ~~~~~~~~~^^^^^^
+KeyError: 'q0'
+
+2024-11-07 04:20:16 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 04:38:05 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 136, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 124, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-11-07 04:38:05 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 04:39:25 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 136, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 124, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-11-07 04:39:25 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 04:41:04 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 126, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-11-07 04:44:19 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 126, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-11-07 04:46:10 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 112, in main
+    print("hhiihihihi"+similarity_scores)
+          ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+numpy._core._exceptions._UFuncNoLoopError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U10'), dtype('float64')) -> None
+
+2024-11-07 04:46:10 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 04:46:46 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 126, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-11-07 04:46:46 [ERROR]: Error parsing Python response: Unexpected token 'h', "hhiihihihi []
+" is not valid JSON
+2024-11-07 04:47:24 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 98, in main
+    print("hhiihihihi", json_data)
+  File "C:\Developer\python\Lib\encodings\cp1252.py", line 19, in encode
+
+2024-11-07 04:47:24 [ERROR]: Python error:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 18-20: character maps to <undefined>
+
+2024-11-07 04:47:24 [ERROR]: Error parsing Python response: Unexpected token 'h', "hhiihihihi " is not valid JSON
+2024-11-07 04:48:33 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 98, in main
+    print(json_data)
+  File "C:\Developer\python\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 18-20: character maps to <undefined>
+
+2024-11-07 04:48:33 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 04:49:37 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 98, in main
+    print(json_data)
+  File "C:\Developer\python\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 18-20: character maps to <undefined>
+
+2024-11-07 04:49:37 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 04:50:58 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 126, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-11-07 04:50:58 [ERROR]: Error parsing Python response: Unexpected token 'h', "hihi
+" is not valid JSON
+2024-11-07 04:51:52 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 98, in main
+    print(json_data)
+  File "C:\Developer\python\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 18-19: character maps to <undefined>
+
+2024-11-07 04:51:52 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 04:54:06 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 98, in main
+    print(json.dumps(json_data, ensure_ascii=False))
+  File "C:\Developer\python\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 18-19: character maps to <undefined>
+
+2024-11-07 04:54:06 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 04:55:41 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 126, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-11-07 04:56:40 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 112, in main
+    print(similarity_scores[0])
+          ~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+2024-11-07 04:56:40 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 04:57:46 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 112, in main
+    print(similarity_scores[0][0])
+          ~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+2024-11-07 04:57:46 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 04:58:38 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 106, in main
+    print(item_profile[0])
+          ~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+2024-11-07 04:58:38 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 04:59:41 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+
+2024-11-07 04:59:42 [ERROR]: Python error:     return self._engine.get_loc(casted_key)
+
+2024-11-07 04:59:42 [ERROR]: Python error:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-11-07 04:59:42 [ERROR]: Python error:   File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+
+2024-11-07 04:59:42 [ERROR]: Python error:   File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+
+2024-11-07 04:59:42 [ERROR]: Python error:   File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+
+2024-11-07 04:59:42 [ERROR]: Python error:   File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 103, in main
+
+2024-11-07 04:59:42 [ERROR]: Python error:     print(filtered_df[0])
+          ~~~~~~~~~~~^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+
+2024-11-07 04:59:42 [ERROR]: Python error:     indexer = self.columns.get_loc(key)
+
+2024-11-07 04:59:42 [ERROR]: Python error:               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+
+2024-11-07 04:59:42 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 05:00:20 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 103, in main
+    print(filtered_df[0])
+          ~~~~~~~~~~~^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+
+2024-11-07 05:00:20 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 05:01:27 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 103, in main
+    print(filtered_df)
+  File "C:\Developer\python\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 27-30: character maps to <undefined>
+
+2024-11-07 05:01:27 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 05:04:05 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 103, in main
+    print(json_data['q1'])
+  File "C:\Developer\python\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 2-3: character maps to <undefined>
+
+2024-11-07 05:04:06 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 05:05:44 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 127, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-11-07 05:05:44 [ERROR]: Error parsing Python response: Unexpected token ''', "['마법사', '탱커']
+" is not valid JSON
+2024-11-07 05:06:25 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 127, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-11-07 05:06:25 [ERROR]: Error parsing Python response: Unexpected token 'E', "Empty Data"... is not valid JSON
+2024-11-07 05:07:28 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 127, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-11-07 05:07:28 [ERROR]: Error parsing Python response: Unexpected token 'E', "Empty Data"... is not valid JSON
+2024-11-07 05:08:37 [ERROR]: Python error: Traceback (most recent call last):
+
+2024-11-07 05:08:37 [ERROR]: Python error:   File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+
+2024-11-07 05:08:37 [ERROR]: Python error:   File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 93, in main
+    print(standardized_data[0])
+          ~~~~~~~~~~~~~~~~~^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+
+2024-11-07 05:08:37 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 05:10:08 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 137, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-11-07 05:10:08 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 05:11:53 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 137, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champ1_num": int(top_indices_original[0]),
+                      ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-11-07 05:11:53 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 05:20:05 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 138, in <module>
+
+2024-11-07 05:20:05 [ERROR]: Python error:     main()
+
+2024-11-07 05:20:05 [ERROR]: Python error:   File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 102, in main
+    filtered_df = standardized_data[standardized_data['\ub77c\uc778'] == json_data['line']].copy()
+
+2024-11-07 05:20:05 [ERROR]: Python error:                                                                  ~~~~~~~~~^^^^^^^^
+KeyError: 'line'
+
+2024-11-07 05:20:05 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 07:47:38 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+
+2024-11-07 07:47:38 [ERROR]: Python error:     main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champions": top_champions.loc['\uc601\ubb38\uba85'],
+
+2024-11-07 07:47:39 [ERROR]: Python error:                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+
+2024-11-07 07:47:39 [ERROR]: Python error:     return self._getitem_axis(maybe_callable, axis=axis)
+
+2024-11-07 07:47:39 [ERROR]: Python error:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexing.py", line 1431, in _getitem_axis
+    return self._get_label(key, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexing.py", line 1381, in _get_label
+    return self.obj.xs(label, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\generic.py", line 4301, in xs
+
+2024-11-07 07:47:39 [ERROR]: Python error:     loc = index.get_loc(key)
+
+2024-11-07 07:47:39 [ERROR]: Python error:           ^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+
+2024-11-07 07:47:39 [ERROR]: Python error:     raise KeyError(key)
+
+2024-11-07 07:47:39 [ERROR]: Python error: KeyError: '\uc601\ubb38\uba85'
+
+2024-11-07 07:47:39 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 07:47:42 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champions": top_champions.loc['\uc601\ubb38\uba85'],
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexing.py", line 1431, in _getitem_axis
+    return self._get_label(key, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexing.py", line 1381, in _get_label
+    return self.obj.xs(label, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\generic.py", line 4301, in xs
+    loc = index.get_loc(key)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: '\uc601\ubb38\uba85'
+
+2024-11-07 07:47:42 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 07:49:12 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champions": top_champions.loc['\ud55c\uae00\uba85'],
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexing.py", line 1431, in _getitem_axis
+    return self._get_label(key, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexing.py", line 1381, in _get_label
+    return self.obj.xs(label, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\generic.py", line 4301, in xs
+    loc = index.get_loc(key)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: '\ud55c\uae00\uba85'
+
+2024-11-07 07:49:12 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 07:51:21 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '\ud55c\uae00\uba85'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champions": top_champions['\ud55c\uae00\uba85'].tolist(),
+                 ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+
+2024-11-07 07:51:21 [ERROR]: Python error:     indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '\ud55c\uae00\uba85'
+
+2024-11-07 07:51:21 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 07:51:22 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '\ud55c\uae00\uba85'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champions": top_champions['\ud55c\uae00\uba85'].tolist(),
+                 ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '\ud55c\uae00\uba85'
+
+2024-11-07 07:51:22 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '\ud55c\uae00\uba85'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champions": top_champions['\ud55c\uae00\uba85'].tolist(),
+                 ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '\ud55c\uae00\uba85'
+
+2024-11-07 07:51:22 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-07 07:51:22 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 17:28:22 [ERROR]: Python error: Traceback (most recent call last):
+
+2024-11-09 17:28:22 [ERROR]: Python error:   File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+
+2024-11-09 17:28:23 [ERROR]: Python error:     return self._engine.get_loc(casted_key)
+
+2024-11-09 17:28:23 [ERROR]: Python error:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-11-09 17:28:23 [ERROR]: Python error:   File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+
+2024-11-09 17:28:23 [ERROR]: Python error:   File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+
+2024-11-09 17:28:23 [ERROR]: Python error:   File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+
+2024-11-09 17:28:23 [ERROR]: Python error:   File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+
+2024-11-09 17:28:23 [ERROR]: Python error: KeyError: '\ud55c\uae00\uba85'
+
+2024-11-09 17:28:23 [ERROR]: Python error: 
+
+2024-11-09 17:28:23 [ERROR]: Python error: The above exception was the direct cause of the following exception:
+
+2024-11-09 17:28:23 [ERROR]: Python error: 
+
+2024-11-09 17:28:23 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+
+2024-11-09 17:28:23 [ERROR]: Python error:     main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champions": top_champions['\ud55c\uae00\uba85'].tolist(),
+
+2024-11-09 17:28:23 [ERROR]: Python error:                  ~~~~~~~~~~~~~^^^^^^^^^^
+
+2024-11-09 17:28:23 [ERROR]: Python error:   File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+
+2024-11-09 17:28:23 [ERROR]: Python error:     indexer = self.columns.get_loc(key)
+
+2024-11-09 17:28:23 [ERROR]: Python error:               ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-11-09 17:28:23 [ERROR]: Python error:   File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+
+2024-11-09 17:28:23 [ERROR]: Python error:     raise KeyError(key) from err
+
+2024-11-09 17:28:23 [ERROR]: Python error: KeyError: '\ud55c\uae00\uba85'
+
+2024-11-09 17:28:23 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 17:29:44 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+
+2024-11-09 17:29:44 [ERROR]: Python error:     return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+
+2024-11-09 17:29:44 [ERROR]: Python error: KeyError: '\ud55c\uae00\uba85'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champions": top_champions['\ud55c\uae00\uba85'].tolist(),
+
+2024-11-09 17:29:44 [ERROR]: Python error:                  ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+
+2024-11-09 17:29:44 [ERROR]: Python error:     indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '\ud55c\uae00\uba85'
+
+2024-11-09 17:29:44 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 17:36:11 [ERROR]: Python error: Traceback (most recent call last):
+
+2024-11-09 17:36:11 [ERROR]: Python error:   File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 13, in <module>
+
+2024-11-09 17:36:11 [ERROR]: Python error:     standardized_data = pd.read_excel("C:/Developer/nodejs/whatchamp/python/StandardizedData.xlsx", encoding='utf-8')
+
+2024-11-09 17:36:11 [ERROR]: Python error:                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-11-09 17:36:11 [ERROR]: Python error: TypeError: read_excel() got an unexpected keyword argument 'encoding'
+
+2024-11-09 17:36:11 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 17:39:31 [ERROR]: Python error: Traceback (most recent call last):
+
+2024-11-09 17:39:31 [ERROR]: Python error:   File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 13, in <module>
+
+2024-11-09 17:39:31 [ERROR]: Python error:     standardized_data = pd.read_csv("C:/Developer/nodejs/whatchamp/python/StandardizedData.csv", encoding='utf-8')
+
+2024-11-09 17:39:31 [ERROR]: Python error:                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-11-09 17:39:31 [ERROR]: Python error:   File "C:\Developer\python\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+
+2024-11-09 17:39:31 [ERROR]: Python error:     return _read(filepath_or_buffer, kwds)
+
+2024-11-09 17:39:31 [ERROR]: Python error:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-11-09 17:39:31 [ERROR]: Python error:   File "C:\Developer\python\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+
+2024-11-09 17:39:31 [ERROR]: Python error:     parser = TextFileReader(filepath_or_buffer, **kwds)
+
+2024-11-09 17:39:31 [ERROR]: Python error:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-11-09 17:39:31 [ERROR]: Python error:   File "C:\Developer\python\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+
+2024-11-09 17:39:31 [ERROR]: Python error:     self._engine = self._make_engine(f, self.engine)
+
+2024-11-09 17:39:31 [ERROR]: Python error:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-11-09 17:39:31 [ERROR]: Python error:   File "C:\Developer\python\Lib\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+
+2024-11-09 17:39:31 [ERROR]: Python error:     return mapping[engine](f, **self.options)
+
+2024-11-09 17:39:31 [ERROR]: Python error:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-11-09 17:39:31 [ERROR]: Python error:   File "C:\Developer\python\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+
+2024-11-09 17:39:31 [ERROR]: Python error:     self._reader = parsers.TextReader(src, **kwds)
+
+2024-11-09 17:39:31 [ERROR]: Python error:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 574, in pandas._libs.parsers.TextReader.__cinit__
+  File "parsers.pyx", line 691, in pandas._libs.parsers.TextReader._get_header
+
+2024-11-09 17:39:31 [ERROR]: Python error: UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc7 in position 2: invalid continuation byte
+
+2024-11-09 17:39:31 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 19:57:14 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+
+2024-11-09 19:57:14 [ERROR]: Python error:     return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+
+2024-11-09 19:57:14 [ERROR]: Python error: KeyError: '\ud55c\uae00\uba85'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champions": top_champions['\ud55c\uae00\uba85'].tolist(),
+
+2024-11-09 19:57:14 [ERROR]: Python error:                  ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+
+2024-11-09 19:57:14 [ERROR]: Python error:     indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '\ud55c\uae00\uba85'
+
+2024-11-09 19:57:14 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 20:04:28 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+
+2024-11-09 20:04:28 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+
+2024-11-09 20:04:28 [ERROR]: Python error:     return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '\ud55c\uae00\uba85'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+
+2024-11-09 20:04:28 [ERROR]: Python error:     return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '\ud55c\uae00\uba85'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champions": top_champions['\ud55c\uae00\uba85'].tolist(),
+
+2024-11-09 20:04:28 [ERROR]: Python error:     main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champions": top_champions['\ud55c\uae00\uba85'].tolist(),
+
+2024-11-09 20:04:28 [ERROR]: Python error:                  ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+
+2024-11-09 20:04:28 [ERROR]: Python error:                  ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+
+2024-11-09 20:04:28 [ERROR]: Python error:     indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '\ud55c\uae00\uba85'
+
+2024-11-09 20:04:28 [ERROR]: Python error:     indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '\ud55c\uae00\uba85'
+
+2024-11-09 20:04:28 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 20:04:28 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 20:07:11 [ERROR]: Python error: Traceback (most recent call last):
+
+2024-11-09 20:07:11 [ERROR]: Python error:   File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 13, in <module>
+
+2024-11-09 20:07:11 [ERROR]: Python error:     standardized_data = pd.read_excel("C:/Developer/nodejs/whatchamp/python/StandardizedData.xlsx")
+
+2024-11-09 20:07:11 [ERROR]: Python error: Traceback (most recent call last):
+
+2024-11-09 20:07:11 [ERROR]: Python error:                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-11-09 20:07:11 [ERROR]: Python error:   File "C:\Developer\python\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+
+2024-11-09 20:07:11 [ERROR]: Python error:   File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 13, in <module>
+    standardized_data = pd.read_excel("C:/Developer/nodejs/whatchamp/python/StandardizedData.xlsx")
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+
+2024-11-09 20:07:12 [ERROR]: Python error:     io = ExcelFile(
+
+2024-11-09 20:07:12 [ERROR]: Python error:          ^^^^^^^^^^
+
+2024-11-09 20:07:12 [ERROR]: Python error:   File "C:\Developer\python\Lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+
+2024-11-09 20:07:12 [ERROR]: Python error:     ext = inspect_excel_format(
+
+2024-11-09 20:07:12 [ERROR]: Python error:           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\io\common.py", line 882, in get_handle
+
+2024-11-09 20:07:12 [ERROR]: Python error:     io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\io\common.py", line 882, in get_handle
+
+2024-11-09 20:07:12 [ERROR]: Python error:     handle = open(handle, ioargs.mode)
+
+2024-11-09 20:07:12 [ERROR]: Python error:     handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/Developer/nodejs/whatchamp/python/StandardizedData.xlsx'
+
+2024-11-09 20:07:12 [ERROR]: Python error:              ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/Developer/nodejs/whatchamp/python/StandardizedData.xlsx'
+
+2024-11-09 20:07:12 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 20:07:12 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 20:08:32 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 111, in main
+    similarity_scores = cos_sim(item_profile, user_profile)
+
+2024-11-09 20:08:32 [ERROR]: Python error:                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 86, in cos_sim
+    dot_product = np.dot(item_profile, user_profile)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: shapes (34,16) and (15,) not aligned: 16 (dim 1) != 15 (dim 0)
+
+2024-11-09 20:08:32 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 20:09:53 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+
+2024-11-09 20:09:53 [ERROR]: Python error:     return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+
+2024-11-09 20:09:53 [ERROR]: Python error:   File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+
+2024-11-09 20:09:53 [ERROR]: Python error: KeyError: '\ud55c\uae00\uba85'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champions": top_champions['\ud55c\uae00\uba85'].tolist(),
+
+2024-11-09 20:09:53 [ERROR]: Python error:                  ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+
+2024-11-09 20:09:53 [ERROR]: Python error:     indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '\ud55c\uae00\uba85'
+
+2024-11-09 20:09:53 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 20:24:27 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+
+2024-11-09 20:24:27 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+
+2024-11-09 20:24:27 [ERROR]: Python error:     return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '\ud55c\uae00\uba85'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 142, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 122, in main
+    champions = top_champions['\ud55c\uae00\uba85'].tolist()
+
+2024-11-09 20:24:27 [ERROR]: Python error:     return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '\ud55c\uae00\uba85'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 142, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 122, in main
+    champions = top_champions['\ud55c\uae00\uba85'].tolist()
+
+2024-11-09 20:24:27 [ERROR]: Python error:                 ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+
+2024-11-09 20:24:27 [ERROR]: Python error:                 ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+
+2024-11-09 20:24:27 [ERROR]: Python error:     indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '\ud55c\uae00\uba85'
+
+2024-11-09 20:24:28 [ERROR]: Python error:     indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '\ud55c\uae00\uba85'
+
+2024-11-09 20:24:28 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 20:24:28 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 20:26:46 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'WinRate'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 125, in main
+    "champions": top_champions['WinRate'].tolist(),
+                 ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'WinRate'
+
+2024-11-09 20:26:46 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-09 20:54:54 [ERROR]: Error parsing Python response: Cannot set headers after they are sent to the client
+2024-11-09 22:13:01 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 139, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 102, in main
+    filtered_df = standardized_data[standardized_data['\ub77c\uc778'] == json_data['q0']].copy()
+
+2024-11-09 22:13:01 [ERROR]: Python error:                                                                  ~~~~~~~~~^^^^^^
+KeyError: 'q0'
+
+2024-11-09 22:13:01 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-11 09:22:39 [ERROR]: Python error: Traceback (most recent call last):
+
+2024-11-11 09:22:39 [ERROR]: Python error:   File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 13, in <module>
+    standardized_data = pd.read_excel(sys.argv[1]+"/python/StandardizedData.xlsx")
+                                      ~~~~~~~~^^^
+IndexError: list index out of range
+
+2024-11-11 09:22:39 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-11 09:23:37 [ERROR]: Python error: Traceback (most recent call last):
+
+2024-11-11 09:23:37 [ERROR]: Python error:   File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 13, in <module>
+    standardized_data = pd.read_excel(sys.argv[0]+"/python/StandardizedData.xlsx")
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+
+2024-11-11 09:23:38 [ERROR]: Python error:     io = ExcelFile(
+
+2024-11-11 09:23:38 [ERROR]: Python error:          ^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Developer\python\Lib\site-packages\pandas\io\common.py", line 882, in get_handle
+
+2024-11-11 09:23:38 [ERROR]: Python error:     handle = open(handle, ioargs.mode)
+
+2024-11-11 09:23:38 [ERROR]: Python error:              ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Developer\\nodejs\\whatchamp\\python\\cossim.py/python/StandardizedData.xlsx'
+
+2024-11-11 09:23:38 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-11 09:28:40 [ERROR]: Python error: Traceback (most recent call last):
+
+2024-11-11 09:28:40 [ERROR]: Python error:   File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 12, in <module>
+    path = os.path.dirname(os.path.abspath(__file__))
+           ^^
+
+2024-11-11 09:28:40 [ERROR]: Python error: NameError: name 'os' is not defined. Did you forget to import 'os'?
+
+2024-11-11 09:28:40 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-11 09:29:27 [ERROR]: Python error: Traceback (most recent call last):
+
+2024-11-11 09:29:27 [ERROR]: Python error:   File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 16, in <module>
+    standardized_data = pd.read_excel(os.path.join(current_dir, 'StandardizedData.xlsx'))
+                                                   ^^^^^^^^^^^
+NameError: name 'current_dir' is not defined
+
+2024-11-11 09:29:27 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-11 09:29:57 [ERROR]: Error parsing Python response: Unexpected token 'E', "Error: 404
+" is not valid JSON
+2024-11-11 09:39:16 [ERROR]: Error parsing Python response: Unexpected token 'E', "Error: 404
+" is not valid JSON
+2024-11-11 09:39:30 [ERROR]: Python error: Traceback (most recent call last):
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 143, in <module>
+    main()
+  File "C:\Developer\nodejs\whatchamp\python\cossim.py", line 109, in main
+    item_profile = filtered_df.drop(columns=columns_to_drop).to_numpy()
+                   ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'filtered_df' where it is not associated with a value
+
+2024-11-11 09:39:30 [ERROR]: Error parsing Python response: Unexpected end of JSON input
+2024-11-11 09:40:34 [ERROR]: Error parsing Python response: Unexpected token 'E', "Error: 404
+" is not valid JSON
+2024-11-26 09:04:43,236 [INFO]: Server is running on http://0.0.0.0:5000
+2024-11-26 09:04:43,243 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.12:5000
+2024-11-26 09:04:43,243 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 09:15:24,148 [INFO]: 127.0.0.1 - - [26/Nov/2024 09:15:24] "GET / HTTP/1.1" 200 -
+2024-11-26 09:15:24,195 [INFO]: 127.0.0.1 - - [26/Nov/2024 09:15:24] "GET /static/js/main.1a2c4597.js HTTP/1.1" 200 -
+2024-11-26 09:15:24,196 [INFO]: 127.0.0.1 - - [26/Nov/2024 09:15:24] "GET /static/css/main.35989ebf.css HTTP/1.1" 200 -
+2024-11-26 09:15:24,403 [INFO]: 127.0.0.1 - - [26/Nov/2024 09:15:24] "GET /manifest.json HTTP/1.1" 200 -
+2024-11-26 09:15:24,448 [INFO]: 127.0.0.1 - - [26/Nov/2024 09:15:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-26 09:15:24,450 [INFO]: 127.0.0.1 - - [26/Nov/2024 09:15:24] "GET /logo192.png HTTP/1.1" 200 -

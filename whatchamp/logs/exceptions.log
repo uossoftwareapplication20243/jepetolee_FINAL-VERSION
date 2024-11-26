@@ -1,0 +1,90 @@
+2024-11-07 03:48:55 [ERROR]: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:655:11)
+    at ServerResponse.header (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:278:15)
+    at Socket.<anonymous> (C:\Developer\nodejs\whatchamp\server.js:53:23)
+    at Socket.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-11-07 03:50:09 [ERROR]: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:655:11)
+    at ServerResponse.header (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:278:15)
+    at Socket.<anonymous> (C:\Developer\nodejs\whatchamp\server.js:53:23)
+    at Socket.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-11-07 03:51:29 [ERROR]: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:655:11)
+    at ServerResponse.header (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:278:15)
+    at Socket.<anonymous> (C:\Developer\nodejs\whatchamp\server.js:53:23)
+    at Socket.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-11-07 03:53:22 [ERROR]: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:655:11)
+    at ServerResponse.header (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:278:15)
+    at Socket.<anonymous> (C:\Developer\nodejs\whatchamp\server.js:53:23)
+    at Socket.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-11-07 03:57:33 [ERROR]: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:655:11)
+    at ServerResponse.header (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:278:15)
+    at Socket.<anonymous> (C:\Developer\nodejs\whatchamp\server.js:53:23)
+    at Socket.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-11-07 03:58:09 [ERROR]: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:655:11)
+    at ServerResponse.header (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:278:15)
+    at Socket.<anonymous> (C:\Developer\nodejs\whatchamp\server.js:53:23)
+    at Socket.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-11-07 04:00:01 [ERROR]: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:655:11)
+    at ServerResponse.header (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:278:15)
+    at Socket.<anonymous> (C:\Developer\nodejs\whatchamp\server.js:53:23)
+    at Socket.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-11-07 04:01:39 [ERROR]: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:655:11)
+    at ServerResponse.header (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:278:15)
+    at Socket.<anonymous> (C:\Developer\nodejs\whatchamp\server.js:53:23)
+    at Socket.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-11-09 20:54:54 [ERROR]: uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:655:11)
+    at ServerResponse.header (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Developer\nodejs\whatchamp\node_modules\express\lib\response.js:278:15)
+    at Socket.<anonymous> (C:\Developer\nodejs\whatchamp\server.js:58:23)
+    at Socket.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)

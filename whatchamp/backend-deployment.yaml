@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whatchamp-backend
+  labels:
+    app: whatchamp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: whatchamp
+  template:
+    metadata:
+      labels:
+        app: whatchamp
+    spec:
+      containers:
+      - name: whatchamp-backend
+        image: jepetolee/whatchamp-backend:latest # Docker 이미지
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000 # Flask 기본 포트 (5000 사용 중)
+        env:
+        - name: ENVIRONMENT
+          value: "production"
+
