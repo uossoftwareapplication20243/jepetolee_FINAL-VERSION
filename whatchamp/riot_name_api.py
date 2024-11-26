@@ -75,65 +75,56 @@ def get_match_details(match_id: str, region: str):
         print(f"Error fetching match details: {response.status_code}")
         return None
 
+def validate_environment():
+    if not API_KEY:
+        handle_error("Missing Riot API Key in environment variables", code=500)
+
+def validate_input(json_data):
+    if not json_data.get("username") or not json_data.get("tag"):
+        handle_error("Invalid input: 'username' and 'tag' are required", code=400)
+
+def handle_error(message, code=None):
+    response = {"error": message}
+    if code:
+        response["code"] = code
+    print(json.dumps(response), file=sys.stderr)
+    sys.exit(1)
+
+def log_debug(message):
+    with open("riot_name_api_debug.log", "a") as log_file:
+        log_file.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')} - {message}\n")
+
+
 def main():
     try:
-        # JSON 데이터 직접 로드
         json_data = json.load(sys.stdin)
+        log_debug(f"Input JSON: {json_data}")
+
+        validate_environment()
+        validate_input(json_data)
+
+        summoner_name = json_data["username"]
+        tag = json_data["tag"]
+
+        summoner_info = get_summoner_info(summoner_name, tag)
+        if not summoner_info:
+            handle_error("Summoner info not found or API request failed"+str(summoner_name)+str(tag), code=404)
+
+        puuid = summoner_info.get("puuid")
+        if not puuid:
+            handle_error("Summoner PUUID not found in response", code=404)
+            
+        match_history = get_match_history(puuid, region='asia', count=100)
+        if match_history is None:
+            handle_error("Failed to fetch match history", code=500)
+
+        response = {"match_count": len(match_history)}
+        log_debug(f"Output JSON: {response}")
+        print(json.dumps(response, ensure_ascii=False))
     except json.JSONDecodeError as e:
-        print(f"JSON decode error: {e}", file=sys.stderr)
-        sys.exit(1)
-
-
-    # 소환사 닉네임과 태그 입력 받기
-    summoner_name = json_data["username"]
-    tag = json_data["tag"]
-
-    # 소환사 정보 가져오기
-    summoner_info = get_summoner_info(summoner_name, tag)
-    region = 'asia'
-
-    # 결과 출력
-    if summoner_info:
-        # print(f"소환사 이름: {summoner_info['puuid']}")
-        # print(f"소환사 레벨: {summoner_info['gameName']}")
-        # print(f"소환사 아이디: {summoner_info['tagLine']}")
-
-        # print(summoner_info)
-        puuid = summoner_info['puuid']
-        
-        # 모든 게임 기록 가져오기 (최대 20개의 기록을 가져옴)
-        match_history = get_match_history(puuid, region, count=100)
-
-        print(json.dumps(len(match_history), ensure_ascii=False))
-        
-        # if match_history:
-        #     filtered_matches = []
-            
-        #     for match_id in match_history:
-        #         match_details = get_match_details(match_id, region)
-        #         if match_details:
-        #             queue_id = match_details['info']['queueId']
-                    
-        #             # 큐 ID가 450이 아닌 게임만 필터링 (칼바람 나락 제외)
-        #             if (queue_id == 420 or queue_id == 430 or queue_id == 440):
-        #                 filtered_matches.append(match_details)
-            
-        #     # 필터링된 게임 기록 출력
-        #     if filtered_matches:
-        #         print(f"칼바람 나락 제외된 최근 {len(filtered_matches)}개의 게임 기록:")
-            
-        #         for match in filtered_matches:
-        #             for participant in match['info']['participants']:
-        #                 if participant['puuid'] == puuid:
-        #                     print(f"{participant['summonerName']} used {participant['championName']}")
-        #                     # break
-        #             # print(f"매치 ID: {match['metadata']['matchId']}, 큐 ID: {match['info']['queueId']}")
-        #     else:
-        #         print("칼바람 나락을 제외한 게임 기록이 없습니다.")
-
-            
-            # if(len(filtered_matches) >= 10):
-            #     # 콜라보레이트 필터링 수행
+        handle_error(f"JSON decode error: {str(e)}", code=400)
+    except Exception as e:
+        handle_error(f"Unexpected error: {str(e)}", code=500)
 
 
 if __name__ == "__main__":

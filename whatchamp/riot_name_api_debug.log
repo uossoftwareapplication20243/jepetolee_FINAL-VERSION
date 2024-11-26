@@ -1,0 +1,4 @@
+2024-11-26 11:52:43 - Input JSON: {'username': 'testuser', 'tag': 'KR1'}
+2024-11-26 11:52:44 - Output JSON: {'match_count': 0}
+2024-11-26 11:53:04 - Input JSON: {'username': 'Hide on Bush', 'tag': 'KR1'}
+2024-11-26 11:53:04 - Output JSON: {'match_count': 100}

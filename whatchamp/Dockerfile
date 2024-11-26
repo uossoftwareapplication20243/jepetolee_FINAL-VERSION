@@ -9,7 +9,7 @@ COPY . /app
 
 # 종속성 설치
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+RUN pip install torch --index-url https://download.pytorch.org/whl/cu124
 COPY .env .env
 COPY . .
 # 애플리케이션 실행 명령어
