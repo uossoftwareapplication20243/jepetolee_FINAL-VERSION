@@ -1171,3 +1171,19 @@ UnboundLocalError: cannot access local variable 'filtered_df' where it is not as
 2024-11-26 14:39:06,899 [INFO]: 210.125.183.216 - - [26/Nov/2024 14:39:06] "GET /static/css/main.35989ebf.css HTTP/1.1" 200 -
 2024-11-26 14:39:06,900 [INFO]: 210.125.183.216 - - [26/Nov/2024 14:39:06] "GET /static/js/main.1a2c4597.js HTTP/1.1" 200 -
 2024-11-26 14:39:07,225 [INFO]: 210.125.183.216 - - [26/Nov/2024 14:39:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-26 16:13:29,884 [INFO]: Server is running on http://0.0.0.0:5000
+2024-11-26 16:13:29,887 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.12:5000
+2024-11-26 16:13:29,887 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 16:13:38,430 [INFO]: Server is running on http://0.0.0.0:5000
+2024-11-26 16:13:38,432 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.12:5000
+2024-11-26 16:13:38,432 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 16:13:56,872 [INFO]: 211.234.188.27 - - [26/Nov/2024 16:13:56] "GET / HTTP/1.1" 200 -
+2024-11-26 16:13:57,066 [INFO]: 211.234.188.27 - - [26/Nov/2024 16:13:57] "GET /static/css/main.35989ebf.css HTTP/1.1" 200 -
+2024-11-26 16:13:57,081 [INFO]: 211.234.188.27 - - [26/Nov/2024 16:13:57] "GET /static/js/main.1a2c4597.js HTTP/1.1" 200 -
+2024-11-26 16:13:58,358 [INFO]: 211.234.188.27 - - [26/Nov/2024 16:13:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

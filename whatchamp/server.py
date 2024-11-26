@@ -1,15 +1,16 @@
 from flask import Flask, request, jsonify, send_from_directory, make_response
 from flask_cors import CORS
 import subprocess
-import os
 import logging
-import json
+from riot_name_api import *
+from model_req import *
 
 # Flask 앱 생성
 app = Flask(__name__, static_folder='build')
 
 # CORS 설정 추가
 CORS(app, supports_credentials=True, resources={r"/*": {"origins": "http://www.jepetolee.p-e.kr"}})
+
 
 # 로그 설정
 log_directory = os.path.join(os.path.dirname(__file__), 'logs')
@@ -48,54 +49,22 @@ def starter():
         logger.warning("Invalid request: Missing username")
         return jsonify({"message": "Invalid request: username is required"}), 400
 
-    script_path = os.path.join(os.path.dirname(__file__), 'riot_name_api.py')
     logger.debug(f"Sending to Python script: {data}")
 
     try:
-        # Python 스크립트 실행
-        process = subprocess.Popen(
-            ['python', script_path],
-            stdin=subprocess.PIPE,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True
-        )
-        stdout, stderr = process.communicate(input=json.dumps(data))
+        response = checking_response(username,tag)
+        # 조건부 /api/result 호출
+        if response["success"]:  # 예: 응답 데이터에 'success' 필드가 있으면 전달
+            logger.info(f"Forwarding to /api/result for user: {username}, tag: {tag}")
+            new_result_url = f"http://localhost:5000/api/result/{username}/{tag}"
 
-        # Python 스크립트 오류 확인
-        if stderr:
-            logger.error(f"Python script error: {stderr.strip()}")
-            return jsonify({"message": "Python script error occurred", "error": stderr.strip()}), 500
+            # /api/result로 데이터 전송
+            result_response = requests.post(new_result_url)
 
-        # Python 응답 데이터 확인
-        if stdout.strip():
-            logger.info(f"Response from riot_name_api: {stdout.strip()}")
-            try:
-                response_data = json.loads(stdout.strip())
-            except json.JSONDecodeError:
-                logger.error("Failed to decode JSON from riot_name_api response")
-                return jsonify({"message": "Invalid response from riot_name_api"}), 500
-
-            # 조건부 /api/new_result 호출
-            if response_data.get("success"):  # 예: 응답 데이터에 'success' 필드가 있으면 전달
-                logger.info(f"Forwarding to /api/new_result for user: {username}, tag: {tag}")
-                new_result_url = f"http://localhost:5000/api/new_result/{username}/{tag}"
-
-                # /api/new_result로 데이터 전송
-                result_response = requests.post(new_result_url, json=response_data)
-
-                if result_response.status_code == 200:
-                    logger.info(f"Successfully forwarded to /api/new_result: {result_response.json()}")
-                    return jsonify(result_response.json()), 200
-                else:
-                    logger.error(f"Error forwarding to /api/new_result: {result_response.text}")
-                    return jsonify({"message": "Failed to forward to /api/new_result"}), 500
-            else:
-                logger.info("No success response from riot_name_api; not forwarding to /api/new_result")
-                return jsonify({"message": "Processing completed, but no further action required"}), 200
+            return result_response
         else:
-            logger.warning("No response from riot_name_api; not forwarding to /api/new_result")
-            return jsonify({"message": "No response from riot_name_api"}), 200
+            logger.info("No success response from riot_name_api; not forwarding to /api/new_result")
+            return jsonify({"message": "Processing completed, but no further action required"}), 200
 
     except Exception as e:
         logger.error(f"Failed to start Python process: {str(e)}")
@@ -104,44 +73,12 @@ def starter():
 # /api/result/<username>/<tag> 엔드포인트 정의
 @app.route('/api/result/<username>/<tag>', methods=['GET'])
 def get_result(username, tag):
-    line = request.args.get('line')
-
-    if not line:
-        logger.warning("Invalid request: Missing line parameter")
-        return jsonify({"message": "Invalid request: line parameter is required"}), 400
-
-    user_info = {
-        "username": username,
-        "tag": tag,
-        "line": line
-    }
-
-    script_path = os.path.join(os.path.dirname(__file__), 'model_req.py')
-    logger.debug(f"Sending to Python script with user_info: {user_info}")
 
     try:
-        # Python 스크립트 실행
-        process = subprocess.Popen(
-            ['python', script_path],
-            stdin=subprocess.PIPE,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True
-        )
-        json_string = json.dumps(user_info)
-        logger.debug(f"Sending to Python script: {json_string}")
-        stdout, stderr = process.communicate(input=json_string)
-
-        # Python 스크립트 오류 확인
-        if stderr:
-            logger.error(f"Python script error: {stderr.strip()}")
-            return jsonify({"message": "Python script error", "error": stderr.strip()}), 500
-
-        # Python 응답 데이터 처리
+        champions_data = get_champions_name(username,tag)
         try:
-            response_data = json.loads(stdout.strip())
-            logger.info(f"Sending response to client: {json.dumps(response_data, ensure_ascii=False)}")
-            return jsonify(response_data), 200
+            logger.info(f"Sending response to client: {json.dumps(champions_data, ensure_ascii=False)}")
+            return jsonify(champions_data)
         except json.JSONDecodeError:
             logger.error("Failed to decode JSON from Python script")
             return jsonify({"message": "Failed to decode JSON response"}), 500

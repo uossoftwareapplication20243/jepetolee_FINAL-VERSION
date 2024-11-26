@@ -4,7 +4,6 @@ import requests
 import os
 import json
 import sys
-import re
 import io
 # .env 파일 로드
 load_dotenv()
@@ -44,7 +43,7 @@ def get_summoner_info(summoner_name: str, tag: str):
         return None
 
 # 매치 리스트를 가져오는 함수
-def get_match_history(puuid: str, region: str, count=100):
+def get_match_history(puuid: str,  count=100):
     match_url = f"https://asia.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids?startTime=1715731200&start=0&count={count}"
     headers = {"X-Riot-Token": API_KEY}
     response = requests.get(match_url, headers=headers)
@@ -57,22 +56,6 @@ def get_match_history(puuid: str, region: str, count=100):
         time.sleep(retry_after)  # 지정된 시간만큼 대기
     else:
         print(f"Error fetching match history: {response.status_code}")
-        return None
-
-# 매치 세부 정보를 가져오는 함수
-def get_match_details(match_id: str, region: str):
-    match_detail_url = f"https://asia.api.riotgames.com/lol/match/v5/matches/{match_id}"
-    headers = {"X-Riot-Token": API_KEY}
-    response = requests.get(match_detail_url, headers=headers)
-    
-    if response.status_code == 200:
-        return response.json()
-    elif response.status_code == 429:
-        retry_after = int(response.headers.get("Retry-After", 1))  # 'Retry-After' 헤더 값(초) 가져오기
-        print(f"Rate limit exceeded. Retrying in {retry_after} seconds...")
-        time.sleep(retry_after)  # 지정된 시간만큼 대기
-    else:
-        print(f"Error fetching match details: {response.status_code}")
         return None
 
 def validate_environment():
@@ -95,37 +78,29 @@ def log_debug(message):
         log_file.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')} - {message}\n")
 
 
-def main():
+def checking_response(summoner_name, tag):
     try:
-        json_data = json.load(sys.stdin)
-        log_debug(f"Input JSON: {json_data}")
 
         validate_environment()
-        validate_input(json_data)
-
-        summoner_name = json_data["username"]
-        tag = json_data["tag"]
 
         summoner_info = get_summoner_info(summoner_name, tag)
         if not summoner_info:
-            handle_error("Summoner info not found or API request failed"+str(summoner_name)+str(tag), code=404)
+            handle_error("Summoner info not found or API request failed" + str(summoner_name) + str(tag), code=404)
 
         puuid = summoner_info.get("puuid")
         if not puuid:
             handle_error("Summoner PUUID not found in response", code=404)
-            
-        match_history = get_match_history(puuid, region='asia', count=100)
+
+        match_history = get_match_history(puuid, count=100)
         if match_history is None:
             handle_error("Failed to fetch match history", code=500)
 
-        response = {"match_count": len(match_history),"success":true}
+        response = {"match_count": len(match_history), "success": True}
         log_debug(f"Output JSON: {response}")
-        print(json.dumps(response, ensure_ascii=False))
+        return response
     except json.JSONDecodeError as e:
         handle_error(f"JSON decode error: {str(e)}", code=400)
+        return {"match_count": 0, "success": False}
     except Exception as e:
         handle_error(f"Unexpected error: {str(e)}", code=500)
-
-
-if __name__ == "__main__":
-    main()
+        return {"match_count": 0, "success": False}

@@ -1,8 +1,5 @@
-import numpy as np
 import pandas as pd
-import json
 import sys
-import re
 import io
 import os
 import time
@@ -12,7 +9,6 @@ from transformers import DistilBertTokenizer, DistilBertModel
 from dotenv import load_dotenv
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 
 
 load_dotenv()
@@ -50,7 +46,7 @@ def get_item_names():
 # PUUID 가져오기
 def get_puuid(summoner_name):
     summoner_name = parse.quote(summoner_name)
-    summoner_url = f'https://{REGION}.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/{summoner_name}'
+    summoner_url = f'https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/{summoner_name}'
     
     headers = {
         'X-Riot-Token': API_KEY,
@@ -214,40 +210,11 @@ def get_champions_name(summoner_name, tag):
     model = UltraGCNWithDistilBERT()
     out = model.test_foward(print_champion_stats(user_id))
     _,top_k  =  torch.topk(out,3)
-    return list(map(lambda idx: get_champion_name_by_index(idx), top_k[0].tolist()))
-
-
-def main():
-    try:
-        # JSON 데이터 직접 로드
-        json_data = json.load(sys.stdin)
-    except json.JSONDecodeError as e:
-        print(f"JSON decode error: {e}", file=sys.stderr)
-        sys.exit(1)
-
-
-    """
-    input으로 json_data가 들어갑니다. 
-    json_data는 username, tag, line 세 가지 정보를 가지고 있습니다.
-
-    이 사이에 파이썬 추가 하시거나 아니면 직접 만드셔도 되고,
-
-    아웃풋으로 champions를 주시면 바로 작동 가능할 것 같습니다.
-    """
-    champions_name = get_champions_name(json_data['username'], json_data['tag'])
-
-    
-    # 챔피언 정보를 JSON으로 출력
-    response_data = {
+    return  {
         "message": "Data received successfully",
-        "champions": champions_name
-        # "championsNum": champions_num
-    }
-    # if json_data['tag'] == "KR3":
-    #     response_data['champions'] = ['알리스타', '브라움', '마오카이']
-    
-    # ensure_ascii=False를 사용하여 한글이 제대로 출력되도록 함
-    print(json.dumps(response_data, ensure_ascii=False))
+        "champions":  list(map(lambda idx: get_champion_name_by_index(idx), top_k[0].tolist()))
+        }
 
-if __name__ == "__main__":
-    main()
+
+
+
