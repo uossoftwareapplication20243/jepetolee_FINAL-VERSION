@@ -190,32 +190,29 @@ class UltraGCNWithDistilBERT(nn.Module):
 def get_champions_name(summoner_name, tag):
     url = f"https://asia.api.riotgames.com/riot/account/v1/accounts/by-riot-id/{summoner_name}/{tag}"
 
-    # 헤더에 API 키 추가
     headers = {
         "X-Riot-Token": API_KEY,
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
-
     }
 
-    # API 요청
     response = requests.get(url, headers=headers)
 
-    # 요청이 성공했을 경우
     if response.status_code == 200:
         user_id = response.json()['puuid']
-        # return summoner_data
-    elif response.status_code == 429:
-        retry_after = int(response.headers.get("Retry-After", 1))  # 'Retry-After' 헤더 값(초) 가져오기
-        print(f"Rate limit exceeded. Retrying in {retry_after} seconds...")
-        time.sleep(retry_after)  # 지정된 시간만큼 대기
-  
-    model = UltraGCNWithDistilBERT()
-    out = model.test_foward(print_champion_stats(user_id))
-    _,top_k  =  torch.topk(out,3)
-    return  {
-        "message": "Data received successfully",
-        "champions":  list(map(lambda idx: get_champion_name_by_index(idx), top_k[0].tolist()))
+        model = UltraGCNWithDistilBERT()
+        out = model.test_foward(print_champion_stats(user_id))
+        _, top_k = torch.topk(out, 3)
+        return {
+            "message": "Data received successfully",
+            "champions": list(map(lambda idx: get_champion_name_by_index(idx), top_k[0].tolist()))
         }
+    elif response.status_code == 429:
+        retry_after = int(response.headers.get("Retry-After", 1))
+        print(f"Rate limit exceeded. Retrying in {retry_after} seconds...")
+        time.sleep(retry_after)
+        return {"error": "Rate limit exceeded. Please try again later."}, 429
+    else:
+        return {"error": f"Failed to fetch data from Riot API. Status code: {response.status_code}"}, response.status_code
 
 
 

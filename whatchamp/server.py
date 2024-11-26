@@ -4,6 +4,7 @@ import subprocess
 import logging
 from riot_name_api import *
 from model_req import *
+import os
 
 # Flask 앱 생성
 app = Flask(__name__, static_folder='build')
@@ -59,7 +60,7 @@ def starter():
             new_result_url = f"http://localhost:5000/api/result/{username}/{tag}"
 
             # /api/result로 데이터 전송
-            result_response = requests.post(new_result_url)
+            result_response = jsonify(result_response.json()), result_response.status_code
 
             return result_response
         else:
@@ -71,17 +72,16 @@ def starter():
         return jsonify({"message": "Failed to start Python process", "error": str(e)}), 500
 
 # /api/result/<username>/<tag> 엔드포인트 정의
-@app.route('/api/result/<username>/<tag>', methods=['GET'])
+@app.route('/api/result/<username>/<tag>', methods=['GET','POST'])
 def get_result(username, tag):
 
     try:
-        champions_data = get_champions_name(username,tag)
-        try:
-            logger.info(f"Sending response to client: {json.dumps(champions_data, ensure_ascii=False)}")
-            return jsonify(champions_data)
-        except json.JSONDecodeError:
-            logger.error("Failed to decode JSON from Python script")
-            return jsonify({"message": "Failed to decode JSON response"}), 500
+        champions_data = get_champions_name(username, tag)
+
+        # champions_data가 튜플(데이터, 상태 코드)인 경우 처리
+        if isinstance(champions_data, tuple):
+            data, status_code = champions_data
+            return jsonify(data), status_code
 
     except Exception as e:
         logger.error(f"Failed to start Python process: {str(e)}")
