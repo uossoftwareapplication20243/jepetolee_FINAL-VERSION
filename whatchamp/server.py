@@ -38,7 +38,6 @@ def handle_preflight():
         response.headers.add("Access-Control-Allow-Credentials", "true")
         return response, 200
 
-# /api/starter 엔드포인트 정의
 @app.route('/api/starter', methods=['POST'])
 def starter():
     data = request.get_json()
@@ -68,18 +67,35 @@ def starter():
             logger.error(f"Python script error: {stderr.strip()}")
             return jsonify({"message": "Python script error occurred", "error": stderr.strip()}), 500
 
-        # Python 응답 데이터 처리
-        try:
-            response_data = json.loads(stdout.strip())
-            logger.info(f"Sending response to client: {response_data}")
-        except json.JSONDecodeError:
-            logger.error("Failed to decode JSON from Python script :{stdout.strip()}")
-            return jsonify({"message": "Failed to decode JSON response"}), 500
+        # Python 응답 데이터 확인
+        if stdout.strip():
+            logger.info(f"Response from riot_name_api: {stdout.strip()}")
+            try:
+                response_data = json.loads(stdout.strip())
+            except json.JSONDecodeError:
+                logger.error("Failed to decode JSON from riot_name_api response")
+                return jsonify({"message": "Invalid response from riot_name_api"}), 500
 
-        if response_data.get('data', 0) > 50:
-            return jsonify({"message": "Data processed successfully", "record-based": True}), 200
+            # 조건부 /api/new_result 호출
+            if response_data.get("success"):  # 예: 응답 데이터에 'success' 필드가 있으면 전달
+                logger.info(f"Forwarding to /api/new_result for user: {username}, tag: {tag}")
+                new_result_url = f"http://localhost:5000/api/new_result/{username}/{tag}"
+
+                # /api/new_result로 데이터 전송
+                result_response = requests.post(new_result_url, json=response_data)
+
+                if result_response.status_code == 200:
+                    logger.info(f"Successfully forwarded to /api/new_result: {result_response.json()}")
+                    return jsonify(result_response.json()), 200
+                else:
+                    logger.error(f"Error forwarding to /api/new_result: {result_response.text}")
+                    return jsonify({"message": "Failed to forward to /api/new_result"}), 500
+            else:
+                logger.info("No success response from riot_name_api; not forwarding to /api/new_result")
+                return jsonify({"message": "Processing completed, but no further action required"}), 200
         else:
-            return jsonify({"message": "Data processed, but without record", "record-based": False}), 200
+            logger.warning("No response from riot_name_api; not forwarding to /api/new_result")
+            return jsonify({"message": "No response from riot_name_api"}), 200
 
     except Exception as e:
         logger.error(f"Failed to start Python process: {str(e)}")

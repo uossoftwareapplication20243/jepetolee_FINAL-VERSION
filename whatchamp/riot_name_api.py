@@ -118,7 +118,7 @@ def main():
         if match_history is None:
             handle_error("Failed to fetch match history", code=500)
 
-        response = {"match_count": len(match_history)}
+        response = {"match_count": len(match_history),"success":true}
         log_debug(f"Output JSON: {response}")
         print(json.dumps(response, ensure_ascii=False))
     except json.JSONDecodeError as e:
