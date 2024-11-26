@@ -192,7 +192,9 @@ def get_champions_name(summoner_name, tag):
 
     # 헤더에 API 키 추가
     headers = {
-        "X-Riot-Token": API_KEY
+        "X-Riot-Token": API_KEY,
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+
     }
 
     # API 요청
