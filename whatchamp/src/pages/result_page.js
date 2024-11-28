@@ -29,7 +29,7 @@ function ResultPage() {
 
         if (response.status === 200) {
           const data = await response.json();
-          setChampionList(data.champions); 
+          setChampionList(data); 
         } else {
           console.error('Request failed with status:', response.status);
         }
