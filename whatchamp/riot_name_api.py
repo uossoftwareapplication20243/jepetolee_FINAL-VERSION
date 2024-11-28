@@ -95,7 +95,11 @@ def checking_response(summoner_name, tag):
         if match_history is None:
             handle_error("Failed to fetch match history", code=500)
 
-        response = {"match_count": len(match_history), "success": True}
+        record_based = False
+        if (len(match_history) > 50):
+            record_based = True
+
+        response = {"match_count": len(match_history), "success": True, "record-based": record_based}
         log_debug(f"Output JSON: {response}")
         return response
     except json.JSONDecodeError as e:
