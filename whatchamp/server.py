@@ -56,11 +56,18 @@ def starter():
         response = checking_response(username,tag)
         # 조건부 /api/result 호출
         if response["success"]:  # 예: 응답 데이터에 'success' 필드가 있으면 전달
-            logger.info(f"Forwarding to /api/result for user: {username}, tag: {tag}")
             new_result_url = f"http://localhost:5000/api/result/{username}/{tag}"
 
+            logger.info(f"Forwarding to /api/result for user: {username}, tag: {tag}")
+
+            logger.info(f"response: {response}")
+
+            # # /api/result로 데이터 전송
+            # result_response = jsonify(response.json()), response.status_code
+
+            # return result_response
             # /api/result로 데이터 전송
-            result_response = jsonify(result_response.json()), result_response.status_code
+            result_response = jsonify(response), 200  # 이미 dict이므로 jsonify로 바로 변환
 
             return result_response
         else:
@@ -77,11 +84,13 @@ def get_result(username, tag):
 
     try:
         champions_data = get_champions_name(username, tag)
+        # {'message': 'Data received successfully', 'champions': ['렝가', '럭스', '제라스']}
 
         # champions_data가 튜플(데이터, 상태 코드)인 경우 처리
-        if isinstance(champions_data, tuple):
-            data, status_code = champions_data
-            return jsonify(data), status_code
+        if isinstance(champions_data, dict):
+            data = champions_data['champions']
+            # status_code, data = champions_data
+            return jsonify(data), 200
 
     except Exception as e:
         logger.error(f"Failed to start Python process: {str(e)}")
@@ -157,4 +166,3 @@ if __name__ == '__main__':
     port = 5000
     logger.info(f"Server is running on http://0.0.0.0:{port}")
     app.run(host='0.0.0.0', port=port, debug=os.environ.get('FLASK_ENV') == 'development')
-
