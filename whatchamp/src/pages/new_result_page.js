@@ -30,7 +30,6 @@ function NewResultPage() {
       const sendData = async () => {
         try {
           const data = await sendQuestionMap(questionMap, username, tag);
-          console.log(data);
           navigate('/new_result');
         } catch (error) {
           console.error('Error sending data:', error);
