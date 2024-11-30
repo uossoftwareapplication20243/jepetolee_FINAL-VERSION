@@ -23,16 +23,13 @@ function ResultPage() {
     async function fetchChampionData() {
       setLoading(true); // Start loading
       try {
-        console.log("CF 결과 서버에 요청");
         const response = await fetch(
           server_url + `/api/result/${username}${tag}?line=${line}`,
           { method: 'GET', headers: { 'Content-Type': 'application/json' } }
         );
 
         if (response.status === 200) {
-          console.log("Content-based 결과 데이터 반환성공");
           const data = await response.json();
-          console.log(data);
           setChampionList(data); 
         } else {
           console.error('Request failed with status:', response.status);
