@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Box, Typography, TextField, Button, Grid } from '@mui/material';
 import QuestionProvider from '../context/questionContext';
-import { url } from '../const/url';
 import { useQuestionContext } from '../context/questionContext.js';
+import { server_url } from '../const/url.js';
+import { active_color, inactive_color } from '../const/color.js';
 
 function MainPage() {
   const [showLineSelection, setShowLineSelection] = useState(false);
@@ -19,37 +20,40 @@ function MainPage() {
   const lines = [
     "탑", "정글", "미드", "원딜", "서폿", "상관없음"
   ];
-
   const handleLineSelection = async (line_index) => {
     setLine(line_index);
     setQuestionMap({
       ...questionMap,
       line: lines[line_index]
     });
-
-    const response = await fetch(
-      url+"/api/starter", 
-      {
-        method: "POST",
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({username: username, tag: tag})
-      }
-    );
-    // const data = await response.json();
-    // console.log(data);
-
-    if (response.status === 200) {
-      const data = await response.json();
-    
-      if (data["record-based"]) {
-        navigate('/result');
+  
+    try {
+      console.log("서버로 통신");
+      const response = await fetch(
+        server_url + "/api/starter",
+        {
+          method: "POST",
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username: username, tag: tag })
+        }
+      );
+  
+      if (response.ok) {
+        const data = await response.json();
+        console.log("서버 통신 성공");
+  
+        if (data["record-based"]) {
+          console.log("CF 결과페이지로 이동");
+          navigate('/result');
+        } else {
+          console.log("Content Based 질문 페이지로 이동");
+          navigate('/question1');
+        }
       } else {
-        // Navigate to the page for a negative result
-        navigate('/question1');
+        console.error("Request failed with status:", response.status);
       }
-    } else {
-      console.error("Request failed with status:", response.status);
-      navigate('/question1');
+    } catch (error) {
+      console.error("Error during fetch:", error);
     }
   };
 
@@ -106,9 +110,9 @@ function MainPage() {
                     onClick={() => handleLineSelection(index)}
                     sx={{
                       height: 100,
-                      backgroundColor: 'rgba(68, 77, 242, 0.5)',
+                      backgroundColor: inactive_color,
                       '&:hover': {
-                        backgroundColor: 'rgba(68, 77, 242, 1)',
+                        backgroundColor: active_color,
                       }
                     }}
                   >
