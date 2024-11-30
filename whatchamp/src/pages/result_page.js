@@ -24,7 +24,7 @@ function ResultPage() {
       setLoading(true); // Start loading
       try {
         const response = await fetch(
-          server_url + `/api/result/${username}${tag}?line=${line}`,
+          server_url + `/api/result/${username}/${tag}?line=${line}`,
           { method: 'GET', headers: { 'Content-Type': 'application/json' } }
         );
 
