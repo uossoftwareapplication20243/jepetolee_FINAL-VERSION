@@ -28,7 +28,6 @@ function MainPage() {
     });
   
     try {
-      console.log("서버로 통신");
       const response = await fetch(
         server_url + "/api/starter",
         {
@@ -40,13 +39,10 @@ function MainPage() {
   
       if (response.ok) {
         const data = await response.json();
-        console.log("서버 통신 성공");
   
         if (data["record-based"]) {
-          console.log("CF 결과페이지로 이동");
           navigate('/result');
         } else {
-          console.log("Content Based 질문 페이지로 이동");
           navigate('/question1');
         }
       } else {
