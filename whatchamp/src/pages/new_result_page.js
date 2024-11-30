@@ -20,25 +20,32 @@ function NewResultPage() {
   const idx = line;
 
   useEffect(() => {
-    // Initial static data for demonstration
     setChampionList([]);
   }, []);
 
   useEffect(() => {
+    async function fetchChampionData() {
+      try {
+        const response = await fetch(
+          url+`/api/new/result`,
+          { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(questionMap) }
+        );
 
-    if (questionMap.q8) {
-      const sendData = async () => {
-        try {
-          const data = await sendQuestionMap(questionMap, username, tag);
-          navigate('/new_result');
-        } catch (error) {
-          console.error('Error sending data:', error);
+        if (response.status === 200) {
+          const data = await response.json();
+          setChampionList(data.champions); 
+        } else {
+          console.error('Request failed with status:', response.status);
         }
-      };
-
-      sendData();
+      } catch (error) {
+        console.error('Error fetching champions:', error);
+      }
     }
-  }, [questionMap, username, tag, navigate]);
+
+    if (username && tag) {
+      fetchChampionData();
+    }
+  }, [username, tag, line]);
 
   return (
     <Box
