@@ -17,29 +17,6 @@ const QuestionPage8 = () => {
     navigate('/new_result');
   };
 
-  useEffect(() => {
-    // Check if q8 has been set in questionMap before sending to backend
-    if (questionMap.q8) {
-      const sendQuestionMap = async () => {
-      try {
-          const response = await fetch(
-          `http://3.35.3.104:3000/api/answers/${username}${tag}`, {
-              method: "POST",
-              headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(questionMap)
-            }
-          );
-          const data = await response.json();
-          navigate('/new_result');
-        } catch (error) {
-          console.error('Error sending data:', error);
-      }
-      };
-
-      sendQuestionMap();
-    }
-  }, [questionMap, username, tag, navigate]);
-
   return (
     <MultiOptionsSelector
       idx = {pageIdx}
