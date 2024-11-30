@@ -22,7 +22,6 @@ const QuestionPage8 = () => {
     if (questionMap.q8) {
       const sendQuestionMap = async () => {
       try {
-          console.log(questionMap);
           const response = await fetch(
           `http://3.35.3.104:3000/api/answers/${username}${tag}`, {
               method: "POST",
@@ -31,7 +30,6 @@ const QuestionPage8 = () => {
             }
           );
           const data = await response.json();
-          console.log(data);
           navigate('/new_result');
         } catch (error) {
           console.error('Error sending data:', error);
