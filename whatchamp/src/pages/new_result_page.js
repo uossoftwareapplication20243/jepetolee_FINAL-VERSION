@@ -27,7 +27,7 @@ function NewResultPage() {
     async function fetchChampionData() {
       try {
         const response = await fetch(
-          url+`/api/new/result`,
+          server_url+`/api/new/result`,
           { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(questionMap) }
         );
 
@@ -39,6 +39,8 @@ function NewResultPage() {
         }
       } catch (error) {
         console.error('Error fetching champions:', error);
+      } finally {
+        setLoading(false); // Stop loading
       }
     }
 
