@@ -85,7 +85,10 @@ def checking_response(summoner_name, tag):
 
         summoner_info = get_summoner_info(summoner_name, tag)
         if not summoner_info:
-            handle_error("Summoner info not found or API request failed" + str(summoner_name) + str(tag), code=404)
+            # handle_error("Summoner info not found or API request failed" + str(summoner_name) + str(tag), code=404)
+            response = {"match_count": 0, "success": True, "record-based": False}
+            log_debug(f"Output JSON: {response}")
+            return response
 
         puuid = summoner_info.get("puuid")
         if not puuid:

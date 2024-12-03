@@ -9,8 +9,8 @@ import os
 # Flask 앱 생성
 app = Flask(__name__, static_folder='build')
 
-# CORS 설정 추가
-CORS(app, supports_credentials=True, resources={r"/*": {"origins": "http://www.jepetolee.p-e.kr"}})
+# # CORS 설정 추가
+# CORS(app, supports_credentials=True, resources={r"/*": {"origins": "http://www.jepetolee.p-e.kr"}})
 
 
 # 로그 설정
@@ -81,7 +81,6 @@ def starter():
 # /api/result/<username>/<tag> 엔드포인트 정의
 @app.route('/api/result/<username>/<tag>', methods=['GET','POST'])
 def get_result(username, tag):
-
     try:
         champions_data = get_champions_name(username, tag)
         # {'message': 'Data received successfully', 'champions': ['렝가', '럭스', '제라스']}
@@ -108,7 +107,6 @@ def new_result():
     logger.info(f"Received questionMap: {json.dumps(question_map, ensure_ascii=False)}")
 
     script_path = os.path.join(os.path.dirname(__file__), 'cossim.py')
-    logger.debug(f"Python script path: {script_path}")
 
     try:
         # Python 스크립트 실행
@@ -117,13 +115,16 @@ def new_result():
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
-            text=True
+            text=True,
+            encoding='utf-8'
         )
+        logger.debug(f"Started Python process: {script_path}")
 
         # JSON 데이터를 UTF-8로 인코딩하여 Python 스크립트의 stdin으로 전달
-        json_string = json.dumps(question_map)
+        json_string = json.dumps(question_map, ensure_ascii=False)
         logger.debug(f"Sending to Python script: {json_string}")
         stdout, stderr = process.communicate(input=json_string)
+        logger.debug(f"cossim's output: {stdout.strip()}")
 
         # Python 스크립트 오류 확인
         if stderr:
