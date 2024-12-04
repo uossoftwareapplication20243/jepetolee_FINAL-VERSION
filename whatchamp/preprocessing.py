@@ -17,7 +17,7 @@ roles = ['전사', '마법사', '암살자', '원거리딜러', '탱커', '서�
 
 # 새로운 컬럼 생성
 for role in roles:
-    raw_data[role] = raw_data.apply(lambda row: 2 if role in [row['MainRole'], row['SubRole']] else 0, axis=1)
+    raw_data[role] = raw_data.apply(lambda row: 3.4 if role in [row['MainRole'], row['SubRole']] else 0, axis=1)
 
 # 정규화
 scaler = StandardScaler()

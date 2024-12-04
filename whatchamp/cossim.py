@@ -30,7 +30,7 @@ def q1_mapper(q1):
         # 모든 공백 문자 및 특수 문자 제거
         job_cleaned = re.sub(r'\s+', '', job)
         if job_cleaned in job_dict:
-            result[job_dict[job_cleaned]] = 4
+            result[job_dict[job_cleaned]] = 3.4
         else:
             print(f"Warning: '{job}' after cleaning is not a recognized job type", file=sys.stderr)
     return result
