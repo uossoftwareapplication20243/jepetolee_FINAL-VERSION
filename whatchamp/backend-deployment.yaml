@@ -23,4 +23,7 @@ spec:
         env:
         - name: ENVIRONMENT
           value: "production"
+        resources:
+          limits:
+            nvidia.com/gpu: 1 # GPU 1개 요청
 
