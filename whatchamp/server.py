@@ -10,7 +10,7 @@ import os
 app = Flask(__name__, static_folder='build')
 
 # CORS 설정 추가
-CORS(app, supports_credentials=True, resources={r"/*": {"origins": "http://www.jepetolee.p-e.kr"}})
+CORS(app, supports_credentials=True, resources={r"/*": {"origins": "https://www.jepetolee.p-e.kr"}})
 
 
 # 로그 설정

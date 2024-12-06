@@ -68,7 +68,6 @@ champion_translation = {
     'Ziggs': '직스', 'Zilean': '질리언', 'Zoe': '조이', 'Zyra': '자이라'
 }
 
-print(len(champion_translation))
 champion_name_to_index = {name: index for index, name in index_to_champion_name.items()}
 
 def convert_champions_to_indices(champions_list, mapping):
@@ -206,27 +205,32 @@ def calculate_champion_stats(summoner_id):
         })
 
     champion_list = pd.DataFrame(champion_list)
-    filtered_stats = champion_list[champion_list['GamesPlayed'] >= 10]
+    filtered_stats = champion_list[champion_list['GamesPlayed'] >= 4]
 
     user_champion_stats_winrate = filtered_stats[filtered_stats['WinRate'] > 50]
     user_champion_stats_winrate = user_champion_stats_winrate.sort_values(by=['WinRate'], ascending=[False])
-    user_champion_grouped_winrate = user_champion_stats_winrate['Champion'].apply(list).reset_index()
-    user_champion_grouped_winrate.rename(columns={'Champion': 'WinRate_Sorted_Champions'}, inplace=True)
+    user_champion_grouped_winrate = pd.DataFrame({
+            "WinRate_Sorted_Champions": [", ".join(filtered_stats['Champion'].tolist())]
+            })
 
-    user_champion_stats_pickrate = filtered_stats[filtered_stats['PickRate'] > 7.5]
+    user_champion_stats_pickrate = filtered_stats[filtered_stats['PickRate'] > 20]
     user_champion_stats_pickrate = user_champion_stats_pickrate.sort_values(by=['PickRate'], ascending=[False])
-    user_champion_grouped_pickrate = user_champion_stats_pickrate['Champion'].apply(list).reset_index()
-    user_champion_grouped_pickrate.rename(columns={'Champion': 'PickRate_Sorted_Champions'}, inplace=True)
-
-    user_champion_grouped = pd.merge(user_champion_grouped_winrate, user_champion_grouped_pickrate)
+    user_champion_grouped_pickrate = pd.DataFrame({
+            "PickRate_Sorted_Champions": [", ".join(user_champion_stats_pickrate['Champion'].tolist())]
+            })
+   
+    user_champion_grouped = pd.concat([user_champion_grouped_winrate, user_champion_grouped_pickrate], axis=1)
+    
+    #print(user_champion_grouped['WinRate_Sorted_Champions'])
 
     user_champion_grouped['WinRate_Sorted_Champions'] = user_champion_grouped['WinRate_Sorted_Champions'].apply(
-        lambda champions: [champion_name_to_index.get(champion, -1) for champion in champions]
-        )
+                lambda champions: [champion_name_to_index.get(champion.strip(), -1) for champion in champions.split(",")]
+                )
+    #print(user_champion_grouped['WinRate_Sorted_Champions'])
 
     user_champion_grouped['PickRate_Sorted_Champions'] = user_champion_grouped['PickRate_Sorted_Champions'].apply(
-                lambda champions: [champion_name_to_index.get(champion, -1) for champion in champions]
-                )
+                            lambda champions: [champion_name_to_index.get(champion.strip(), -1) for champion in champions.split(",")]
+                            )
 
     user_champion_indices_win = [
                 index for indices in user_champion_grouped['WinRate_Sorted_Champions'] for index in indices if index >= 0
@@ -237,7 +241,7 @@ def calculate_champion_stats(summoner_id):
                 index for indices in user_champion_grouped['PickRate_Sorted_Champions'] for index in indices if index >= 0
                 ]
     pickrate_array = create_binary_array(user_champion_indices_pick, total_champions=169)
-
+    print(user_champion_indices_pick,user_champion_indices_win)
     return winrate_array,pickrate_array
 
 # 유저 ID 입력 및 처리
@@ -261,7 +265,7 @@ class BSPM(object):
         blur_T = 1
         blur_K = 1
 
-        sharpen_T = 4
+        sharpen_T = 2.5
         sharpen_K = 1
 
         self.device = 'cuda'
@@ -388,12 +392,12 @@ def get_champions_name(summoner_name, tag):
         top_k_pick_indices = top_k_pick[0].tolist()
         top_k_win_indices = top_k_win[0].tolist()
         common_indices = list(set(top_k_pick_indices) & set(top_k_win_indices))
-
         ranked_indices = sorted(
-            common_indices,
-            key=lambda idx: (top_k_pick_indices.index(idx) + top_k_win_indices.index(idx))
-        )
-
+                    common_indices,
+                        key=lambda idx: (
+                                    0.3 * top_k_pick_indices.index(idx) + 0.7 * top_k_win_indices.index(idx)
+                                        )
+                        )
         top_k = ranked_indices[:5]
 
         return {
@@ -421,5 +425,5 @@ end_time = time.time()
 # 경과 시간 계산
 elapsed_time = end_time - start_time
 print(f"경과 시간: {elapsed_time:.2f}초")
-'''
 
+'''
