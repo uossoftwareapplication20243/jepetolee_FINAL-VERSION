@@ -218,25 +218,25 @@ def calculate_champion_stats(summoner_id):
     user_champion_grouped_pickrate = user_champion_stats_pickrate['Champion'].apply(list).reset_index()
     user_champion_grouped_pickrate.rename(columns={'Champion': 'PickRate_Sorted_Champions'}, inplace=True)
 
-
-    # Merge WinRate and PickRate data
     user_champion_grouped = pd.merge(user_champion_grouped_winrate, user_champion_grouped_pickrate)
 
     user_champion_grouped['WinRate_Sorted_Champions'] = user_champion_grouped['WinRate_Sorted_Champions'].apply(
-        lambda x: convert_champions_to_indices(x, champion_name_to_index))
+        lambda champions: [champion_name_to_index.get(champion, -1) for champion in champions]
+        )
 
-    # PickRate_Sorted_Champions 변환
     user_champion_grouped['PickRate_Sorted_Champions'] = user_champion_grouped['PickRate_Sorted_Champions'].apply(
-        lambda x: convert_champions_to_indices(x, champion_name_to_index))
+                lambda champions: [champion_name_to_index.get(champion, -1) for champion in champions]
+                )
 
-    user_champion_indices_win = [champion_name_to_index[champion] for champion in user_champion_grouped['WinRate_Sorted_Champions'] if
-                             champion in champion_name_to_index]
-    winrate_array  = create_binary_array(user_champion_indices_win, total_champions=169)
+    user_champion_indices_win = [
+                index for indices in user_champion_grouped['WinRate_Sorted_Champions'] for index in indices if index >= 0
+                ]
+    winrate_array = create_binary_array(user_champion_indices_win, total_champions=169)
 
-
-    user_champion_indices_pick = [champion_name_to_index[champion] for champion in user_champion_grouped['PickRate_Sorted_Champions'] if
-                             champion in champion_name_to_index]
-    pickrate_array  = create_binary_array(user_champion_indices_pick, total_champions=169)
+    user_champion_indices_pick = [
+                index for indices in user_champion_grouped['PickRate_Sorted_Champions'] for index in indices if index >= 0
+                ]
+    pickrate_array = create_binary_array(user_champion_indices_pick, total_champions=169)
 
     return winrate_array,pickrate_array
 
@@ -371,7 +371,7 @@ def get_champions_name(summoner_name, tag):
         # 해당 인덱스를 마스킹 (0으로 설정)
         rating_win[0, indices_to_mask_tensor] = 0
 
-        _, top_k_win = torch.topk(rating_win, 10)
+        _, top_k_win = torch.topk(rating_win, 30)
 
         adj_mat_pick = model_pick.convert_sp_mat_to_sp_tensor(train_mat_pick)
         adj_mat_pick = adj_mat_pick.to_dense()
@@ -383,7 +383,7 @@ def get_champions_name(summoner_name, tag):
         # 해당 인덱스를 마스킹 (0으로 설정)
         rating_pick[0, indices_to_mask_tensor] = 0
 
-        _, top_k_pick = torch.topk(rating_pick, 10)
+        _, top_k_pick = torch.topk(rating_pick, 30)
 
         top_k_pick_indices = top_k_pick[0].tolist()
         top_k_win_indices = top_k_win[0].tolist()
@@ -394,7 +394,7 @@ def get_champions_name(summoner_name, tag):
             key=lambda idx: (top_k_pick_indices.index(idx) + top_k_win_indices.index(idx))
         )
 
-        top_k = ranked_indices[:3]
+        top_k = ranked_indices[:5]
 
         return {
             "message": "Data received successfully",
@@ -408,12 +408,14 @@ def get_champions_name(summoner_name, tag):
     else:
         return {"error": f"Failed to fetch data from Riot API. Status code: {response.status_code}"}, response.status_code
 
+
+
 '''
 import time
 
 # 시작 시간
 start_time = time.time()
-print(get_champions_name('bUlldOg', 'KR3'))
+print(get_champions_name('괴물쥐', 'KR3'))
 end_time = time.time()
 
 # 경과 시간 계산
